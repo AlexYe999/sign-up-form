@@ -1,0 +1,121 @@
+@font-face {
+    font-family: "norse-bold";
+    src: url(Norse-Bold.otf);
+}
+
+.sidebar {
+    background-image: url("green.jpg");
+    background-size: cover;
+    height: 100vh;
+    width: 33%;
+}
+
+body {
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    margin-left: 30vh;
+    margin-right: 30vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    ;
+}
+
+.content {
+    display: flex;
+}
+
+.odin-logo {
+    font-size: 6rem;
+    color: white;
+    font-family: "norse-bold";
+    background: rgba(0, 0, 0, 0.5);
+    position: relative;
+    top: 14rem;
+    padding-left: 6rem;
+}
+
+#odin-img {
+    width: 6rem;
+    height: 6rem;
+}
+
+.sign-up-form {
+    background-color: whitesmoke;
+    width: 66%;
+}
+
+.credits {
+    position: fixed;
+    bottom: 0;
+    color: white;
+    padding-bottom: 1rem;
+    padding-left: 6rem;
+}
+
+a {
+    color: white;
+}
+
+.form-contents {
+    background-color: white;
+    padding-left: 2rem;
+    box-shadow: 1px 1px 2px grey;
+}
+
+.title {
+    padding-top: 7.25rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 7rem;
+}
+
+.submits {
+    padding-left: 2rem;
+    padding-top: 2rem;
+}
+
+input {
+    display: inline-block;
+    width: 18em;
+    position: relative;
+    top: 0.3em;
+    height: 1.5em;
+    border: 2px solid #E5E7EB;
+    border-radius: 5px;
+}
+
+input:focus {
+    outline: 2px solid lightblue;
+    box-shadow: 1px 1px 5px black;
+}
+
+label {
+    display: inline-block;
+    width: 18em;
+    margin-right: .5em;
+    padding-top: 0em;
+}
+
+section {
+    padding-bottom: 1.5rem;
+}
+
+.alt-sign-up {
+    padding-top: 2rem;
+}
+
+button {
+    color: white;
+    background-color: #596D48;
+    border: none;
+    width: 200px;
+    height: 50px;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+button:hover {
+    cursor: pointer;
+}

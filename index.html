@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="content">
+        <div class="sidebar">
+            <div class="odin-logo">
+                <img src="odin-lined.png" alt="Odin Logo" id="odin-img"> ODIN
+            </div>
+            <div class="credits">
+                Photo by <a href="https://unsplash.com/@haliewestphoto" target="_blank"> Hailie West</a> on <a
+                    href="https://unsplash.com/" target="_blank">Unsplash</a>
+            </div>
+        </div>
+        <div class="sign-up-form">
+            <div class="title">
+                <h2>
+                    This is not a real online service! You know you need something like this in your life to help
+                    you
+                    realize
+                    your deepest dreams. Sign up <i>now</i> to get started.
+                    <br>
+                    <br>
+                    You <i>know</i> you want to.
+                </h2>
+            </div>
+            <form>
+                <div class="form-contents">
+                    <h2 style="padding-top: 1rem"> Let's do this!</h2>
+                    <section>
+                        <label for="first-name">
+                            FIRST NAME
+                            <input type="text" id="first-name" name="first-name" required>
+                        </label>
+                        <label for="last-name">
+                            LAST NAME
+                            <input type="text" id="last-name" name="last-name" required>
+                        </label>
+                    </section>
+                    <section>
+                        <label for="email">
+                            EMAIL
+                            <input type="email" id="email" name="email" required>
+                        </label>
+                        <label for="phone-number">
+                            PHONE NUMBER
+                            <input type="tel" id="phone-number" name="phone-number" pattern="[0-9]{10}"
+                                title="Must be a 10 digit number" required>
+                        </label>
+                    </section>
+                    <section>
+                        <label for="password">
+                            PASSWORD
+                            <input type="password" id="password" name="password"
+                                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                                required>
+                        </label>
+                        <label for="confirm-password">
+                            CONFIRM PASSWORD
+                            <input type="password" id="confirm-password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                                name="confirm-password" required>
+                        </label>
+                    </section>
+                </div>
+                <div class="submits">
+                    <button type="submit">
+                        Create Account
+                    </button>
+                    <div class="alt-sign-up"> Already have an account? <a href="/login"
+                            style="color: green; text-decoration: none;">Log in</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
